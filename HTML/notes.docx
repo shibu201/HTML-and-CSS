@@ -1,1 +1,7 @@
-Notes on theoretical concepts of HTML
+Notes on theoretical concepts of HTML.
+INTRO => HTML is standard markup language for creating webpages. Not a programming language, but a markup language used to structure content. When you watch a movie on an airplane screen → the interface showing menus, subtitles, or flight maps is often HTML-based. 
+HTML is made of tags. Most tags work like containers: they have an opening and a closing. Some tags are self-closing (like <br> or <img>). 
+Every HTML document follow a heirarchy - head for metadata (info about the page, not visible. ex- title, metadata, links etc.) and body for visible content on the page. ex- heading, paragraph etc. 
+index.html → Default file many web servers automatically load. You can change it. 
+Type ! + Enter to generate boilerplate code using Emmet abbreviation. <!DOCTYPE html> → Tells the browser you are using HTML5. Ctrl + → / ← → jump word by word. Ctrl + ↑ / ↓ → navigate between lines. install live server to see the changes in real time. 
+Browsers ignore multiple spaces and line breaks. <br> tag can be used for line breaks.
