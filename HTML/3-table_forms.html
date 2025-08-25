@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Discover neccesary tags when you need them.  -->
+    <blockquote cite="https://developer.mozilla.org">
+        <p>“This is an example of a blockquote with a citation.”</p>
+    </blockquote>
+    <label for="file">File Progress:</label>
+    <progress id="file" value="70" max="100">60%</progress> 
+    <!-- JS can later update it while uploading/downloading file -->
+    <!-- Search input -->
+    <form action="#">
+        <label for="Search">Search : </label>
+        <input type="search" name="search" id="search">
+    </form>
+    
+    <!-- Tablular Data - it creates basic. later border and styling etc. can be applied. -->
+    <table>
+        <tr>
+            <td>Shibu</td>
+            <td>will</td>
+            <td>succeed</td>
+        </tr>
+    </table>
+    <table border="black">
+        <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Place</th>
+        </tr>
+        <tr>
+            <td>Saransh</td>
+            <td>xyz@gmail.com</td>
+            <td>Bihar</td>
+        </tr>
+        <tr>
+            <td>Mr. H</td>
+            <td>H@gmail.com</td>
+            <td>-</td>
+        </tr>
+    </table>
+    <!-- Enhancing Table - Group semantic sections (helps styling & accessibility later). we can also use colspan and rowspan as required. -->
+    <table border="black">
+        <thead>
+            <tr>
+                <td>Name</td>
+                <td>Email</td>
+                <td>Address</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Shibu</td>
+                <td>abcd@gmail.com</td>
+                <td>Earth</td>
+            </tr>
+            <tr>
+                <td>Ronit</td>
+                <td>xyz@gmail.com</td>
+                <td>Mars</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Total 2 Records</td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+</html>
