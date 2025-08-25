@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <!-- it is the bridge between user and server. without it, the website will be static. forms + JavaScript + backend. Basic Syntax = <form action="/submit" method="POST"><-- input fields go here -- </form>. -->
+    <form action="/submit" method="POST"> 
+        <!-- action is the url where form data is sent. method determine how data is sent.  -->
+        <!-- input fields go here. it accept many types of data based on type. -->
+        <label for="Email">Email:</label>
+        <input type="text" id="Email" name="Email">
+        <!-- for attribute must match the id attribute so that both connects. name attribute identifies the field where data is submitted. -->
+    </form>
+    <h2>Login Form</h2>
+    <form action="#">
+        <!-- Simple login form -->
+        <!-- Email field -->
+        <label for="email">Email : </label>
+        <input type="email" id="email" name="email" required placeholder="Enter Your Email">
+        <!-- <input type="email"> → Ensures input has an @ (basic validation built-in). The required attribute forces the user to fill the field before submitting. -->
+        <br>
+        <!-- password field -->
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" minlength="6" maxlength="12">
+        <br>
+        <label for="url">Website</label>
+        <input type="url" name="website" id="url" required placeholder="https://example.com">
+        <!-- Submit Button -->
+        <!-- This button basically submit the form -->
+        <button type="submit">Submit</button>
+        <!-- This reset type button will clear the input given -->
+        <button type="reset">clear</button>
+        <br>
+        <!-- textarea is used for multi line input. Adjustable with rows and cols. -->
+        <label for="feedback">Give feedback Below</label>
+        <br>
+        <textarea name="message" rows="5" cols="30" placeholder="Enter your message" id="feedback"></textarea>
+    </form>
+    <!-- if u leave any field in the above form, browser will show an error. if invalid input is given, will show an error. All handles by html5. another attribute can be minlength maxlength -->
+    <!-- form uses multiple input type based on types of input needed. Many of these come with built-in validation (browser-level checks). The default input type is text. Placeholder attribute shows a light character. Email input ensure that input contain @. Password input hides typed character.-->
+
+    <!-- Advanced input elements => real life forms often needs different input types for different purpose like Multiple choice answers (checkboxes), Single choice options (radio buttons), Dropdown lists (select menus). -->
+    <!-- When a form is submitted, the browser sends the data as a collection of key-value pairs. The name attribute provides the key (or the label), and the user's input provides the value. -->
+    <h2>Creating form using advanced input elements</h2>
+    <form action="#">
+        <!-- using checkbox = The value attribute specifies the actual data that is sent to the server for a given input element when a form is submitted. -->
+        <h3>Choose your hobbies</h3>
+        <label><input type="checkbox" name="hobby" value="reading"> Reading</label>
+        <label><input type="checkbox" name="hobby" value="sports"> Sports</label>
+        <label><input type="checkbox" name="hobby" value="coding"> Coding</label>
+        <br>
+        <!-- Using radiobuttons -->
+        <h3>Choose your gender</h3>
+        <label><input type="radio" name="gender" value="male">Male</label>
+        <label><input type="radio" name="gender" value="Female">Female</label>
+        <label><input type="radio" name="gender" value="others">Others</label>
+        <!-- Select Dropdown - slightly a different way -->
+        <h3>Choose Your Country:</h3>
+        <select name="country">
+            <option value="india">India</option>
+            <option value="usa">USA</option>
+            <option value="uk">UK</option>
+            <option value="australia">Australia</option>
+        </select>
+        <!-- Multiple selection - size="4" shows 4 items at once (without needing to scroll). -->
+         <h3>Select Your Skills:</h3>
+            <select name="skills" multiple size="2">
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="javascript">JavaScript</option>
+                <option value="python">Python</option>
+            </select>
+    </form>
+</body>
+</html>
