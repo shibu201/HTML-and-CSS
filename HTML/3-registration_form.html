@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><Form></Form></title>
+</head>
+<body>
+    <form action="#">
+        <h2>Registration Form</h2>
+        <!-- Name -->
+         <label for="name">Name</label>
+         <input type="text" id="name" required>
+        <!-- Gender -->
+         <h3>Select Your Gender</h3>
+         <label>Male<input type="radio" value="Male" name="gender" required></label>
+         <label>Female<input type="radio" value="Female" name="gender" required></label>
+         <label>Others<input type="radio" value="Others" name="gender" required></label>
+        <!-- Hobbies -->
+         <h3>Select your hobbies</h3>
+         <label>Coding <input type="checkbox" value="coding" name="hobby" required></label>
+         <label>Reading <input type="checkbox" value="reading" name="hobby" required></label>
+         <label>Gymming <input type="checkbox" value="gymming" name="hobby" required></label>
+         <label>Eating <input type="checkbox" value="eating" name="hobby" required></label>
+        <!-- Country -->
+         <h3>Choose your country</h3>
+         <label for="country">Country</label>
+         <select name="country" id="country" required>
+            <option value="">--Select--</option>
+            <option value="India">India</option>
+            <option value="USA">USA</option>
+            <option value="canada">Canada</option>
+            <option value="dubai">UAE</option>
+         </select>
+         <!-- submit -->
+          <br>
+          <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
